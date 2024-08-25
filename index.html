@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Roll Number</title> <!-- Replace with your actual roll number -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>API Input Processor</h1>
+        <label for="jsonInput">API Input</label>
+        <textarea id="jsonInput" placeholder='Enter JSON like {"data":["A","1","z","4"]}'></textarea>
+        <button id="submitBtn">Submit</button>
+        
+        <div id="dropdownContainer" class="hidden">
+            <label for="filterSelect">Multi Filter</label>
+            <select id="filterSelect" multiple>
+                <option value="alphabets">Alphabets</option>
+                <option value="numbers">Numbers</option>
+                <option value="highestLowercase">Highest Lowercase Alphabet</option>
+            </select>
+        </div>
+
+        <div id="responseContainer" class="hidden">
+            <h2>Filtered Response</h2>
+            <p id="filteredResponse"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
